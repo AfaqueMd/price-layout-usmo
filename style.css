@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0a0b0f;
+}
+main{
+    color: rgb(221, 219, 219);
+    font-family: Figtree, Roboto;
+    font-size: 24px;
+    margin: 4% 6%;
+}
+label{
+    color: rgb(134, 132, 132);
+    font-size: 15px;
+}
+p{
+    font-size: 20px;
+    color:rgb(143, 142, 142);
+    font-weight: 600;
+}
+main>div:first-child h2{
+    color: #662cb7;
+    font-size: 24px;
+    padding-left: 10px;
+}
+#desc{
+    padding-left: 3%;
+}
+main>div:first-child h1{
+    font-size: 40px;
+}
+#plans{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plan-options{
+    width: 50%;
+    border: 3px solid rgb(36, 35, 35);
+    box-shadow: rgba(32, 32, 32, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 10px;
+    padding: 10px 4% 30px 4%;
+
+}
+.plan-options:last-child{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: 0px;
+}
+#price{
+    display: flex;
+    align-items: center;
+}
+#price span{
+    font-size: 50px;
+    padding-right: 10px;
+    font-weight: 600;
+    color: rgb(218, 216, 216);
+}
+.pricing-type{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+#plan-benefits{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;    
+}
+#plan-benefits img{
+    padding-right: 10px;
+}
+#choose-pro{
+    background-color: #6523cd;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+#choose-pro span{
+    font-size: 22px;
+    padding-left: 5px;
+}
+#choose-basic{
+    color: white;
+    padding: 10px;
+    border: 1px solid rgb(34, 33, 33);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 50px;
+}
+a{
+    text-decoration: none;
+}
+.basic-plan{
+    width: 27%;
+}
+.basic-plan h2,p,h1{
+    margin: 10px;
+}
+.pricing-type>h2+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-button{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border: 3px solid rgb(156, 156, 156);
+    border-radius: 25px;
+}
+
+.toggle-button::after{
+    content: '';
+    position: absolute;
+    top: 0.1rem;
+    left: 0.1rem;
+    height: 1rem;
+    width: 1rem;
+    background-color: rgb(143, 142, 142);
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked + .toggle-button:after{
+    transform: translateX(20px);
+    background-color: rgb(236, 235, 235);
+}
+input[type="checkbox"]:checked ~ p{
+    color: rgb(197, 197, 197);
+}
+input[type="checkbox"]{
+    display: none;
+}
